@@ -20,7 +20,6 @@ app.use(express.static("public"));
 const blogPost=[];
 
 // urls
-
 // homeUrl
 app.get('/',function(req,res){
   context={initCont:homeStartingContent,blogPost:blogPost}
@@ -77,7 +76,7 @@ app.get('/posts/:type',function(req,res){
   console.log(ld.lowerCase(req.params.type));
   blogPost.forEach(function(blogs){
     console.log(ld.lowerCase(blogPost.title));
-    
+
     if (ld.lowerCase(req.params.type)===ld.lowerCase(blogs.title)){
       console.log('Match Found!');
       context={cusTitle:blogs.title,cusPost:blogs.blog}
