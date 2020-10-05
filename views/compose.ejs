@@ -1,0 +1,22 @@
+<%- include('partials/header') -%>
+
+<h1>Compose A Blog</h1>
+<form action="" method="POST">
+
+  <div class="form-group">
+    <label for="formGroupExampleInput">Title:</label>
+    <input name='title' type="text" class="form-control" id="formGroupExampleInput" placeholder="Remember Title is the key">
+  </div>
+
+
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Blog Post:</label>
+    <textarea name="blog" class="form-control" id="formGroupExampleInput2" rows="8" cols="80" placeholder="Start Writing Awesome Blog!"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Publish</button>
+
+
+</form>
+
+<%- include('partials/footer') -%>
